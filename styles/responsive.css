@@ -25,6 +25,7 @@
         margin: 16px 5px;
     }
 
+
     #page-search-results .cards{
         grid-template-columns: 1fr;
 
@@ -37,15 +38,46 @@
    
 }
 
-@main (min-width: 1700px){
+@media (max-width: 645px) {
+    #page-create-point form  {
+        padding: 32px;
+    }
+    
+
+    #page-create-point form .field-group {
+        flex-direction: column;
+
+    }
+    #page-create-point form .field{
+        margin: 4px;
+    }
+
+    .items-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .items-grid li {
+
+        height: auto;
+        width: auto;
+    
+        padding: 32px 24px 16px;
+
+    }
+
+}
+
+@media (min-width: 1700px){
     #page-home {
         background-position-x: 40vw;
     }
 }
 
-@main (max-heigth: 760px){
+@media (max-heigth: 760px){
     #page-home {
         background-position-y: 200px;
     }
 }
+
 
