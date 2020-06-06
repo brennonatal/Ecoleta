@@ -6,17 +6,15 @@
         align-items: center;
         text-align: center;
     }
-    #page-home header {
-        flex-direction: column;
-       
-    }
+
+    
     #page-home header a {
         margin: 24px 0 16px;
         border-radius: 2px;
-        /* position: absolute;
-        bottom: 10px;
+        position: absolute;
+        top: 36em;
         left: 50%;
-        transform: translateX(-50%); */
+        transform: translateX(-50%);
     }
     #page-home main {
         align-items: center;

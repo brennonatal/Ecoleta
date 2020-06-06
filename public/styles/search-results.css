@@ -1,11 +1,17 @@
+body {
+    background-color: #fff;
+}
+
 body::after {
     content: "";
-    position: fixed;
-    background: white;
-    top: 270px;
+    position: absolute;
+    background: #e5faf9;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    /* rem stands for root element and it gets */
+    height: 16rem;
     z-index: -1;
 }
 

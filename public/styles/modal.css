@@ -84,3 +84,16 @@
     background-color: #2fb85e;
     transition: 400ms;
 }
+
+/* Modal de sucesso do ponto criado */
+#modal.success .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal.success h1 {
+    color: white;
+
+    margin-top: 32px;
+}
