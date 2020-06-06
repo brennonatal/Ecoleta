@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        {# Define um titulo padrao caso nao seja passado outro #}
+        {% block title %}
+            <title>Ecoleta</title>
+        {% endblock title %}
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+        <link href="/styles/main.css" rel="stylesheet">
+
+        {% block styles %}{% endblock styles %}
+
+        <link href="/styles/responsive.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        {# Variavel do conteudo da pagina #}
+        <div id="{{ pageId }}">
+
+            {% block content %}{% endblock content %}
+
+        </div>
+
+        {# Caso nao seja enviado nenhum modal, nao incluirá nada #}
+        {% block modal %}{% endblock modal %}
+
+        {% block scripts %}{% endblock scripts %}
+
+    </body>
+
+</html>
